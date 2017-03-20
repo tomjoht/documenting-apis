@@ -1,0 +1,404 @@
+sidebarTitle: Documenting REST APIs
+
+folders:
+
+- title: Introduction to REST APIs
+  jurl: /introtoapis.html
+  folderitems:
+  - title: Course overview
+    base: introtoapis.html
+    jurl: /docapis_course_overview.html
+    weight: 1.0
+
+  - title: The market for REST API documentation
+    base: introtoapis.html
+    jurl: /docapis_intro_to_rest_api_doc.html
+    weight: 1.1
+
+  - title: Job market overview
+    base: introtoapis.html
+    jurl: /jobapis_overview.html
+    weight: 8.1
+
+  # - title: Learning code -- how much is enough?
+  #   base: introtoapis.html
+  #   jurl: /pubapis_learning_to_code.html
+  #   weight: 8.2
+
+  - title: What is a REST API?
+    base: introtoapis.html
+    jurl: /docapis_what-is-a-rest-api.html
+    weight: 1.2
+
+- title: Using a REST API as a developer
+  jurl: /likeadeveloper.html
+  folderitems:
+
+  - title: Scenario for using a weather API
+    base: likeadeveloper.html
+    jurl: /docapis_scenario_for_using_weather_api.html
+    weight: 1.3
+
+  - title: Getting authorization keys
+    base: likeadeveloper.html
+    jurl: /docapis_get_auth_keys.html
+    weight: 1.4
+
+  - title: Submit calls through Postman
+    base: likeadeveloper.html
+    jurl: /docapis_postman.html
+    weight: 1.5
+
+  - title: Installing cURL
+    base: likeadeveloper.html
+    jurl: /docapis_install_curl.html
+    weight: 1.6
+
+  - title: Making a cURL call
+    base: likeadeveloper.html
+    jurl: /docapis_make_curl_call.html
+    weight: 1.7
+
+  - title: Understand cURL more
+    base: likeadeveloper.html
+    jurl: /docapis_understand_curl.html
+    weight: 1.8
+
+  - title: Using methods with cURL
+    base: likeadeveloper.html
+    jurl: /docapis_curl_with_petstore.html
+    weight: 1.9
+
+  - title: Analyze the JSON response
+    base: likeadeveloper.html
+    jurl: /docapis_analyze_json.html
+    weight: 2.0
+
+  - title: Log JSON to the console
+    base: likeadeveloper.html
+    jurl: /docapis_json_console.html
+    weight: 2.1
+
+  - title: Access and print a specific JSON value
+    base: likeadeveloper.html
+    jurl: /docapis_access_json_values.html
+    weight: 2.2
+
+  - title: Diving into dot notation
+    base: likeadeveloper.html
+    jurl: /docapis_diving_into_dot_notation.html
+    weight: 2.3
+
+- title: Documenting a new API endpoint
+  jurl: /docendpoints.html
+  folderitems:
+
+  - title: New API endpoint to document
+    base: docendpoints.html
+    jurl: /docapis_new_endpoint_to_doc.html
+    weight: 2.4
+
+  - title: Documenting resource descriptions
+    base: docendpoints.html
+    jurl: /docapis_resource_descriptions.html
+    weight: 2.5
+
+  - title: Documenting endpoint definitions and methods
+    base: docendpoints.html
+    jurl: /docapis_doc_endpoint_definitions.html
+    weight: 2.6
+
+  - title: Documenting parameters
+    base: docendpoints.html
+    jurl: /docapis_doc_parameters.html
+    weight: 2.7
+
+  - title: Documenting sample requests
+    base: docendpoints.html
+    jurl: /docapis_doc_sample_requests.html
+    weight: 2.8
+
+  - title: Documenting sample responses
+    base: docendpoints.html
+    jurl: /docapis_doc_sample_responses.html
+    weight: 2.9
+
+  # - title: Documenting code samples
+  #   base: docendpoints.html
+  #   jurl: /docapis_doc_code_samples.html
+  #   weight: 3.0
+
+  # - title: Putting it all together
+  #   base: docendpoints.html
+  #   jurl: /docapis_finished_doc_result.html
+  #   weight: 3.1
+
+  # - title: "My biggest tip: Test everything"
+  #   base: docendpoints.html
+  #   jurl: /nativelibraryapis_testing.html
+  #   weight: 8.0
+
+- title: Documenting non-reference sections
+  jurl: /docnonref.html
+  folderitems:
+
+  - title: Creating user guide tasks
+    base: docnonref.html
+    jurl: /docapis_create_user_guide.html
+    weight: 3.2
+
+  - title: Writing the API overview
+    base: docnonref.html
+    jurl: /docapis_doc_overview.html
+    weight: 3.3
+
+  - title: Writing the Getting Started section
+    base: docnonref.html
+    jurl: /docapis_doc_getting_started_section.html
+    weight: 3.4
+
+  - title: Documenting authentication and authorization
+    base: docnonref.html
+    jurl: /docapis_more_about_authorization.html
+    weight: 3.5
+
+  - title: Documenting response and error codes
+    base: docnonref.html
+    jurl: /docapis_doc_response_codes.html
+    weight: 3.6
+
+  - title: Documenting code samples and tutorials
+    base: docnonref.html
+    jurl: /docapis_codesamples_bestpractices.html
+    weight: 3.7
+
+  - title: Creating the quick reference guide
+    base: docnonref.html
+    jurl: /docapis_doc_quick_reference.html
+    weight: 3.8
+
+- title: Exploring other REST APIs
+  jurl: /otherapis.html
+  folderitems:
+
+  - title: Exploring more REST APIs
+    base: otherapis.html
+    jurl: /docapis_more_rest_exercises.html
+    weight: 3.9
+
+  - title: EventBrite example
+    base: otherapis.html
+    jurl: /docapis_eventbrite_example.html
+    weight: 4.0
+
+  - title: Flickr example
+    base: otherapis.html
+    jurl: /docapis_flickr_example.html
+    weight: 4.1
+
+  - title: Klout example
+    base: otherapis.html
+    jurl: /docapis_klout_example.html
+    weight: 4.2
+
+  - title: Aeris Weather example
+    base: otherapis.html
+    jurl: /docapis_aerisweather_example.html
+    weight: 4.3
+
+  # - title: Next phase of course
+  #   base: otherapis.html
+  #   jurl: /docapis_completion.html
+  #   weight: 4.4
+
+- title: Publishing API docs
+  jurl: /publishingapis.html
+  folderitems:
+
+  - title: Overview
+    base: publishingapis.html
+    jurl: /pubapis_overview.html
+    weight: 4.5
+
+  - title: List of about 100 APIs
+    base: publishingapis.html
+    jurl: /pubapis_apilist.html
+    weight: 4.6
+
+  - title: Breaking down API doc
+    base: publishingapis.html
+    jurl: /pubapis_api_doc_types.html
+    weight: 4.7
+
+  # - title: Tool decisions
+  #   jurl: /pubapis_tooldecisions.html
+  #   weight: 4.8
+
+  - title: Github wikis
+    base: publishingapis.html
+    jurl: /pubapis_github_wikis.html
+    weight: 4.9
+
+  - title: More about Markdown
+    base: publishingapis.html
+    jurl: /pubapis_markdown.html
+    weight: 5.0
+
+  - title: Using a version control system
+    base: publishingapis.html
+    jurl: /pubapis_version_control.html
+    weight: 5.1
+
+  - title: Pull request workflows through Github in browser
+    base: publishingapis.html
+    jurl: /pubapis_github_pull_requests.html
+    weight: 5.2
+
+  - title: REST API specification formats
+    base: publishingapis.html
+    jurl: /pubapis_rest_specification_formats.html
+    weight: 5.3
+
+  # - title: Implementing Swagger with your API docs
+  #   base: publishingapis.html
+  #   jurl: /pubapis_swagger_intro.html
+  #   weight: 5.4
+
+  - title: Swagger tutorial
+    base: publishingapis.html
+    jurl: /pubapis_swagger.html
+    weight: 5.4.1
+
+  - title: More about YAML
+    base: publishingapis.html
+    jurl: /pubapis_yaml.html
+    weight: 5.5
+
+  - title: RAML
+    base: publishingapis.html
+    jurl: /pubapis_raml.html
+    weight: 5.6
+
+  - title: API Blueprint
+    base: publishingapis.html
+    jurl: /pubapis_api_blueprint.html
+    weight: 5.7
+
+  - title: Static site generators (Jekyll)
+    base: publishingapis.html
+    jurl: /pubapis_static_site_generators.html
+    weight: 5.8
+
+  - title: Readme.io
+    base: publishingapis.html
+    jurl: /pubapis_readmeio.html
+    weight: 5.9
+
+  - title: Miredot
+    base: publishingapis.html
+    jurl: /pubapis_miredot.html
+    weight: 6.0
+
+  - title: Custom UX solutions
+    base: publishingapis.html
+    jurl: /pubapis_custom_ux.html
+    weight: 6.1
+
+  - title: Help authoring tools
+    base: publishingapis.html
+    jurl: /pubapis_hats.html
+    weight: 6.2
+
+- title: Design patterns
+  jurl: /designpatterns.html
+  folderitems:
+
+    - title: Design patterns
+      base: designpatterns.html
+      jurl: /pubapis_design_patterns.html
+      weight: 6.3
+
+    - title: Structure and templates
+      base: designpatterns.html
+      jurl: /pubapis_structure_and_templates.html
+      weight: 6.4
+
+    - title: Web platforms
+      base: designpatterns.html
+      jurl: /pubapis_web_platforms.html
+      weight: 6.5
+
+    - title: Abundant code samples
+      base: designpatterns.html
+      jurl: /pubapis_code_samples.html
+      weight: 6.6
+
+    - title: Long-ish pages
+      base: designpatterns.html
+      jurl: /pubapis_longish_pages.html
+      weight: 6.7
+
+    - title: API interactivity
+      base: designpatterns.html
+      jurl: /pubapis_api_interactivity.html
+      weight: 6.8
+
+    - title: Challenging factors
+      base: designpatterns.html
+      jurl: /pubapis_challenging_factors.html
+      weight: 6.9
+
+
+- title: Documenting native library APIs
+  jurl: /nativelibraryapis.html
+  folderitems:
+
+  - title: Overview of native library APIs
+    base: nativelibraryapis.html
+    jurl: /nativelibraryapis_overview.html
+    weight: 7.0
+
+  - title: Getting the Java source
+    base: nativelibraryapis.html
+    jurl: /nativelibraryapis_getting_the_source.html
+    weight: 7.1
+
+  - title: Java crash course
+    base: nativelibraryapis.html
+    jurl: /nativelibraryapis_java_crash_course.html
+    weight: 7.2
+
+  - title: Generate a Javadoc
+    base: nativelibraryapis.html
+    jurl: /nativelibraryapis_create_javadoc.html
+    weight: 7.3
+
+  - title: Javadoc tags
+    base: nativelibraryapis.html
+    jurl: /nativelibraryapis_javadoc_tags.html
+    weight: 7.4
+
+  - title: Exploring the Javadoc output
+    base: nativelibraryapis.html
+    jurl: /nativelibraryapis_exploring_javadoc_output.html
+    weight: 7.5
+
+  - title: Making edits to Javadoc tags
+    base: nativelibraryapis.html
+    jurl: /nativelibraryapis_editing_javadoc.html
+    weight: 7.6
+
+  - title: Doxygen, another document generator
+    base: nativelibraryapis.html
+    jurl: /nativelibraryapis_doxygen.html
+    weight: 7.7
+
+  - title: Documenting non-reference API docs
+    base: nativelibraryapis.html
+    jurl: /nativelibraryapis_nonrefdocs.html
+    weight: 7.8
+
+  - title: Course summary
+    base: nativelibraryapis.html
+    jurl: /nativelibraryapis_workshop_summary.html
+    weight: 7.9
