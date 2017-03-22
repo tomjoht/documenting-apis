@@ -7,18 +7,10 @@ keywords:
 course: "Documenting REST APIs"
 weight: 5.4
 sidebar: docapis
-published: false
 section: publishingapis
 ---
 
-
-I recently gave a presentation that covers the same concepts in this article. See the following: {% if site.target == "pdf" %}https://www.youtube.com/watch?v=wC5hxY0RItQ{% endif %}
-
-{% unless site.target == "pdf" %}
-<iframe width="640" height="360" src="https://www.youtube.com/embed/wC5hxY0RItQ" frameborder="0" allowfullscreen></iframe>
-{% endunless %}
-
-## Introduction
+I recently gave a presentation that covers the same concepts in this article. You can watch it on YouTube here: [https://goo.gl/n4Hvtq](https://goo.gl/n4Hvtq).
 
 On a recent project, after I created documentation for a new API (Application Programming Interface), the project manager wanted to demo the new functionality to some field engineers.
 
@@ -252,6 +244,3 @@ See the following resources for more information on Swagger:
 * [Swagger-ui Responsive theme](https://github.com/jensoleg/swagger-ui)
 * [Swagger-ui](https://github.com/swagger-api/swagger-ui)
 * [Undisturbed REST: A Guide to Designing the Perfect API](http://www.mulesoft.com/lp/ebook/api/restbook), by Michael Stowe
-
-
-(*This article was originally published in [ISTC Communicator](http://www.istc.org.uk/publications-and-resources/communicator/), [Autumn 2016](http://www.istc.org.uk/wp-content/uploads/2016/05/Comm1609Web_TOC.pdf).*)

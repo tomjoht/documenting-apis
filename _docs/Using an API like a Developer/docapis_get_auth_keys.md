@@ -10,16 +10,14 @@ sidebar: docapis
 section: likeadeveloper
 ---
 
-
-## About authorization for API calls
-
 Almost every API has a method in place to authenticate requests. You usually have to provide an API key in requests to get a response. Authorization allows API publishers to do the following:
 
 * License access to the API
 * Rate limit the number of requests
 * Control availability of certain features within the API, and more
 
-{% include tip.html content="Keep in mind how users authorize calls into an API &mdash; this is something you usually cover in API documentation. Later in the course we will dive into authorization methods in more detail." %}
+{: .tip}
+Keep in mind how users authorize calls into an API &mdash; this is something you usually cover in API documentation. Later in the course we will dive into authorization methods in more detail.
 
 In order to run the code samples in this course, you will need to use your own API keys, since these keys are usually treated like personal passwords and not given out or published openly on a web page.
 
@@ -33,7 +31,8 @@ To get the authorization keys to use the Mashape API, you'll need to sign up for
 
 	<img src="images/mashape_get_keys.png" alt="Mashape -- getting the keys" />
 
-	{{note}}If you don't see the Get the Keys button, make sure you click <b>Applications > Default Application</b> on the top navigation bar first. You may have to horizontally scroll to the right (eek!) to see the Get the Keys button." %}
+	{: .note}
+If you don't see the Get the Keys button, make sure you click <b>Applications > Default Application</b> on the top navigation bar first. You may have to horizontally scroll to the right (eek!) to see the Get the Keys button.
 
 3. When the Environment Keys dialog appears, click **Copy** to copy the keys. (Choose the Testing keys, since this type allows you to make unlimited requests.)
 

@@ -7,9 +7,6 @@ weight: 5.5
 section: publishingapis
 ---
 
-
-## About YAML
-
 When you created the Swagger file, you used a syntax called YML. YML stands for "YAML Ain't Markup Language." This means that the YAML syntax doesn't have markup tags such as `<` or `>`.
 
 <figure><a href="http://yaml.org/"><img src="images/yamlscreenshot.png" alt="YAML" /></a><figcaption>The YAML site itself is written using YAML, which you can immediately see is not intended for coding web pages.</figcaption></figure>
@@ -34,7 +31,8 @@ level1:
     level3:
 ```
 
-{% include note.html content="With YAML, you don't use tabs (since they're non-standard). Instead, you space twice." %}
+{: .note}
+With YAML, you don't use tabs (since they're non-standard). Instead, you space twice.
 
 Each level can contain either a single key-value pair (also referred to as a dictionary) or a sequence (a list of hyphens):
 
@@ -55,7 +53,8 @@ YAML files begin with `---`. The values for each key can optionally be enclosed 
 
 Earlier in the course, we looked at various JSON structures involving objects and arrays. Here let's look at the equivalent YAML syntax for each of these same JSON objects.
 
-{% include tip.html content="You can use [Unserialize.me](http://www.unserialize.me/) to make the conversion from JSON to YAML or YAML to JSON." %}
+{: .tip}
+You can use [Unserialize.me](http://www.unserialize.me/) to make the conversion from JSON to YAML or YAML to JSON.
 
 Here are some key-value pairs in JSON:
 

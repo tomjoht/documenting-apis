@@ -7,8 +7,6 @@ weight: 5.3
 section: publishingapis
 ---
 
-
-## REST API specifications
 In an earlier lesson, I mentioned that REST APIs follow an architectural style, not a specific standard. However, there are several REST specifications that have been formulated to try to provide better documentation, tooling, and structure with REST APIs. The three most popular REST API specifications are as follows:
 
 * [Swagger](http://swagger.io/)
@@ -23,4 +21,5 @@ Keep in mind that these specifications just describe the reference endpoints in 
 
 If you choose to automate your documentation using one of these specifications, it likely will be a separate site that showcases your endpoints and provides API interactivity. You'll still need to write a boatload of documentation about how to actually use your API.
 
-{% include tip.html content="For an excellent overview and comparison of these three REST specification formats, see [Top Specification Formats for REST APIs](http://nordicapis.com/top-specification-formats-for-rest-apis.html/) by Kristopher Sandoval on the Nordic APIs blog." %}
+{: .tip}
+For an excellent overview and comparison of these three REST specification formats, see [Top Specification Formats for REST APIs](http://nordicapis.com/top-specification-formats-for-rest-apis.html/) by Kristopher Sandoval on the Nordic APIs blog.

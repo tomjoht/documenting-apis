@@ -7,8 +7,6 @@ weight: 7.0
 section: nativelibraryapis
 ---
 
-## About native library APIs
-
 In previous parts of the course, we focused exclusively on REST APIs. Native library APIs (also called class-based APIs or just APIs) are notably different in the following ways:
 
 * **Installed locally**. Native library APIs are installed locally, compiled into the programmer's code as an additional library. The programmer can then use the classes, methods, or other functions available in the library. (The API part refers to the *public* classes the users use to access the functions in the library. There are probably lots of helper and utility classes in the Java library that aren't public. The *public* functions that the developer audience uses form the API, since this is how people make use of the library.)
@@ -16,7 +14,7 @@ In previous parts of the course, we focused exclusively on REST APIs. Native lib
 * **Language specific**. Native library APIs are language specific. There are as many different types of APIs as there are programming languages, more or less. You can have a Java API, C++ API, C# or .NET API, JavaScript API, and so on.
 * **Requires some programming knowledge to document**. To understand how the API works, you need to have a general understanding of the programming language the API is written for. You don't need to be a programmer, but you should be familiar with the nuts and bolts of the programming language, the correct terms, how the different parts fit together, and how developers will use the API.
 
-{% include note.html content="We will focus this section on Java APIs, since they're probably one of the most common. However, many of the concepts and code conventions mentioned here will apply to the other languages, with minor differences." %}
+We will focus this section on Java APIs, since they're probably one of the most common. However, many of the concepts and code conventions mentioned here will apply to the other languages, with minor differences.
 
 <img src="images/eclipseframe.png" alt="Eclipse" />
 

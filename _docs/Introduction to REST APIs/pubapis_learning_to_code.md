@@ -1,17 +1,13 @@
 ---
-title: 'How much code do you need to know to create developer documentation?'
+title: How much code do you need to know to create developer documentation?
 permalink: /pubapis_learning_to_code.html
 categories:
 - api-doc
 course: "Documenting REST APIs"
-weight: 8.2
+weight: 1.22
 sidebar: docapis
-published: false
 section: introtoapis
 ---
-
-
-## Overview
 
 With developer documentation roles, some level of coding is required. But you don't need to know as much as developers, and acquiring that deep technical knowledge will usually cost you expertise in other areas.
 
@@ -54,13 +50,7 @@ Neiman also says you may need to take the code examples in Java and produce equi
 
 James Neiman and [Andrew Davis](http://www.synergistech.com/) recently gave a presentation titled [Finding the right API Technical Writer](https://www.youtube.com/embed/lmNHBg20ql0) at a API conference in London last October.  
 
-{% if site.target == "pdf" %}See https://www.youtube.com/watch?v=wC5hxY0RItQ for the video. Watch the video around the 23 minute mark. {% endif %}
-
-{% unless site.target == "pdf" %}
-Watch this excerpt at around the 23 minute mark:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lmNHBg20ql0?start=22m33s&end=24m17s" frameborder="0" allowfullscreen></iframe>
-{% endunless %}
+See [this video recording on YouTube](https://www.youtube.com/embed/lmNHBg20ql0?start=22m33s&end=24m17s) (around the 23 minute mark) for the highlights.
 
 Clearly, Neiman argues for a higher level of coding proficiency than Wood or Rhea. The level of coding knowledge required no doubt depends on the position, environment, and expectations. If you're in a situation where the code is over your head, developers may send you chunks of code to add to the documentation.
 

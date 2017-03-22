@@ -9,10 +9,6 @@ sidebar: docapis
 section: otherapis
 ---
 
-
-
-## The challenge
-
 Use the Flickr API to get photo images from [this Flickr gallery](https://www.flickr.com/photos/flickr/galleries/72157647277042064/).
 
 ## Flickr Overview
@@ -61,13 +57,15 @@ The URL below the response shows the right syntax for using this method:
 https://api.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=APIKEY&gallery_id=66911286-72157647277042064&format=json&nojsoncallback=1
 ```
 
-{% include note.html content="I have removed my API key from code samples to prevent possible abuse to my API keys. If you're following along, swap in your own API key here." %}
+{: .note}
+I have removed my API key from code samples to prevent possible abuse to my API keys. If you're following along, swap in your own API key here.
 
 If you submit the request direct in your browser using the given URL, you can see the same response but in the browser rather than the API Explorer:
 
 <img src="images/flickrresponseinbrowser.png" alt="Flickr response in browser" />
 
-{{tip}}I'm using the <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en">JSON Formatting extension for Chrome</a> to make the JSON response more readable. Without this plugin, the JSON response is compressed." %}
+{: .tip}
+I'm using the <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en">JSON Formatting extension for Chrome</a> to make the JSON response more readable. Without this plugin, the JSON response is compressed.
 
 ## 4. Analyze the response
 
@@ -181,7 +179,8 @@ And the result looks like this:
 
 ## Code explanation
 
-{{note}}Note that this code uses JavaScript logic that is usually beyond the need to include in documentation. However, if it was a common scenario to embed a gallery of images on a web page, this kind of code and explanation would be helpful." %}
+{: .note}
+Note that this code uses JavaScript logic that is usually beyond the need to include in documentation. However, if it was a common scenario to embed a gallery of images on a web page, this kind of code and explanation would be helpful.
 
 * In this code, the [ajax method](http://api.jquery.com/jquery.ajax/) from jQuery gets the JSON payload. The payload is assigned to the `data` argument and then logged to the console.
 * The data object contains an object called `photos`, which contains an array called `photo`. The `title` field is a property in the photo object. The `title` is accessed through this dot notation: `data.photos.photo[0].title`.
@@ -200,4 +199,5 @@ The final line shows how you insert those variables into the HTML:
 $("#flickr").append('<img src="https://farm' + farmId + '.staticflickr.com/' + serverId + '/' + id + '_' + secret + '.jpg"/>');
 ```
 
-{% include tip.html content="A common pattern in programming is to loop through a response. This code example used the <code>each</code> method from jQuery to look through all the items in the response and do something with each item. Sometimes you incorporate logic that loops through items and looks for certain conditions present to decide whether to take some action. Pay attention to methods for looping, as they are common scenarios in programming." %}
+{: .tip}
+A common pattern in programming is to loop through a response. This code example used the <code>each</code> method from jQuery to look through all the items in the response and do something with each item. Sometimes you incorporate logic that loops through items and looks for certain conditions present to decide whether to take some action. Pay attention to methods for looping, as they are common scenarios in programming.

@@ -4,10 +4,9 @@ permalink: /docnonref.html
 sidebar: docapis
 ---
 
-{% assign doclist = site.docs | sort: 'weight'  %}
+**In this section:**
+
+{% assign doclist = site.docs | where: "section", "docnonref" | sort: "weight" %}
 {% for page in doclist %}
-{% if page.section == "docnonref" %}
-<h1 id="{{page.permalink | remove: ".html" | remove: "/"}}">{{page.title}}</h1>
-{{page.content}}
-{% endif %}
+* [{{page.title}}]({{page.permalink | remove: "/" }})
 {% endfor %}

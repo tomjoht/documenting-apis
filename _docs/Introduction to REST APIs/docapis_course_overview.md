@@ -8,15 +8,7 @@ sidebar: docapis
 section: introtoapis
 ---
 
-
-
-{% unless site.target == "pdf" %}
-<img src="images/restapi_apidoc.svg" alt="REST API diagram" />
-{% endunless %}
-
-{% if site.target == "pdf" %}
 <img src="images/restapi_apidoc.png" alt="REST API diagram" />
-{% endif %}
 
 ## Documenting REST APIs course
 

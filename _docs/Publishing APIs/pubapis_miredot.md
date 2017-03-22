@@ -6,7 +6,6 @@ sidebar: docapis
 weight: 6.0
 section: publishingapis
 ---
-## How Miredot works
 
 One of the tools you can use to generate API documentation from source -- as long as your source is Java-based -- is Miredot.
 

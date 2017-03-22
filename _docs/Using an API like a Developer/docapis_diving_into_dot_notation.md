@@ -8,9 +8,6 @@ sidebar: docapis
 section: likeadeveloper
 ---
 
-
-## Use a dot to access the value from a key
-
 Let's dive into dot notation a little more.
 
 You use a dot after the object name to access its properties. For example, suppose you have an object called `data`:
@@ -39,7 +36,8 @@ To access glove, you would use `data.items[2]`.
 
 `glove` is the third item in the array.
 
-{% include note.html content="With most programming languages, you usually start counting at <code>0</code>, not <code>1</code>." %}
+{: .note}
+With most programming languages, you usually start counting at <code>0</code>, not <code>1</code>.
 
 ## Exercise with dot notation
 
@@ -113,7 +111,7 @@ In this activity, you'll practice accessing different values through dot notatio
 
 2. Change `john.children[0].child1` to display the right values for each item. For example, the word `green` should appear at the ID tag called `green`.
 
-Check your work by looking at the <a href="docapis_answers.html#dotNotation">Dot Notation section</a> on the answers page.
+Answers are listed at the bottom of this page.
 
 ## Showing wind conditions on the page
 
@@ -186,3 +184,17 @@ A few things are different here, but it's essentially the same code:
 When you load the page and click the button, the following should appear:
 
 <img src="images/windconditionsfinaloutput.png" alt="Final REST API" />
+
+<hr />
+
+**Answers to "Exercise with dot notation activity**
+
+Here's what your dot notation should look like:
+
+```js
+var sarahjson = john.children[0].child1;
+var greenjson = john.eyes;
+var nikejson = john.shoes.brand;
+var goldenrodjson = john.favcolors[1];
+var jimmyjson = john.children[1].child2;
+```

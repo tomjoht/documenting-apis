@@ -10,9 +10,6 @@ sidebar: docapis
 section: likeadeveloper
 ---
 
-
-## GUI clients make REST calls a little easier
-
 When you're testing endpoints with different parameters, you can use one of the many GUI REST clients available. With a GUI REST client, you can:
 
 *  Save your requests (and numerous variations) in a way that's easy to run again
@@ -58,7 +55,8 @@ A lot of times abstract concepts don't make sense until you can contextualize th
 
 	The response appears, such as `52`. In this case, the response is text only. You can switch the format to HTML, JSON, XML, or other formats, but since this response is text only, you won't see any difference. Usually the responses are more detailed JSON, which allows you to select a specific part of the response to work with.
 
-	{{note}}If you get a response that says "Unsupported," this means your `lat` and `lng` values aren't supported. Use the lat and lng values shown here (`?lat=33.8351523&lng=-117.986186`)." %}
+	{: .note}
+If you get a response that says "Unsupported," this means your `lat` and `lng` values aren't supported. Use the lat and lng values shown here (`?lat=33.8351523&lng=-117.986186`).
 
 ## Save the request
 
@@ -76,7 +74,7 @@ Enter details into Postman for the other two endpoints for the Mashape Weather A
 * weather
 * weatherdata
 
-{{important}}The Accept header tells the browser what format you will accept the response in. Whereas the first two endpoints (aqi and weather) are <code>text/plain</code>, the Accept header for the <code>weatherdata</code> endpoint is <code>application/json</code>." %}
+{{important}}The Accept header tells the browser what format you will accept the response in. Whereas the first two endpoints (aqi and weather) are <code>text/plain</code>, the Accept header for the <code>weatherdata</code> endpoint is <code>application/json</code>.
 
 When you save these other endpoints, click the arrow next to Save and choose **Save As**. Then choose your collection and request name. (Otherwise you'll overwrite the settings of the existing request.)
 
@@ -94,7 +92,8 @@ In Postman, make a request to the weatherdata API. Then toggle the options to **
 
 The Pretty JSON view expands the JSON response into more readable code.
 
-{% include tip.html content="To \"prettify\" code means to un-minify it and format it with white space that is readable." %}
+{: .tip}
+To \"prettify\" code means to un-minify it and format it with white space that is readable.
 
 For the sake of variety with GUI clients, here's the same call made in Paw:
 
@@ -110,7 +109,8 @@ Here are a few requests to configure for Aeris. You can just paste the requests 
 
 Note that the Aeris API doesn't use a Header field to pass the API keys &mdash; the key and secret are passed directly in the request URL as part of the query string.
 
-{% include note.html content="When you make the following requests, insert your own values for the <code>CLIENTID</code> and <code>CLIENTSECRET</code>." %}
+{: .note}
+When you make the following requests, insert your own values for the <code>CLIENTID</code> and <code>CLIENTSECRET</code>.
 
 Get the weather forecast for your area:
 

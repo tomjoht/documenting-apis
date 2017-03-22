@@ -7,8 +7,6 @@ weight: 6.5
 section: designpatterns
 ---
 
-## One integrated website
-
 Many API doc sites provide one integrated website to find all of the information. You usually aren't opening help in a new window, separate from the other content. The website is branded with the same look and feel as the product. Here's an example from Yelp:
 
 <a href="https://www.yelp.com/developers/documentation"><img src="images/yelpapi.png" alt="Yelp API documentation" /></a>

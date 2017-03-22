@@ -1,14 +1,11 @@
 ---
-title: "Tool decisions"
+title: Tool decisions
 permalink: /pubapis_tooldecisions.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 4.8
-published: false
 section: publishingapis
 ---
-
-## Writers tools or developers tools
 
 One of the first considerations to make when you think about API doc tooling is who will be doing the writing. If developers will be writing and contributing to the docs, you should integrate the writing tools and process into their toolchain and workflow.
 
@@ -30,13 +27,7 @@ The method quickly gained traction, with hundreds of developer projects adopting
 
 Engineers can either read the documentation directly in the Markdown source, or they can read it displayed in a browser.
 
-If you plan to have developers write, definitely check out Riona Macnamara's Write the Docs 2015 presentation: [Documentation, Disrupted: How two technical writers changed Google engineering culture](http://en.wikipedia.org/wiki/Continental_drift
-).
-{% unless site.target == "pdf" %}
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/EnB8GtPuauw" frameborder="0" allowfullscreen></iframe>
-
-{% endunless %}
+If you plan to have developers write, definitely check out Riona Macnamara's Write the Docs 2015 presentation: [Documentation, Disrupted: How two technical writers changed Google engineering culture](https://www.youtube.com/embed/EnB8GtPuauw).
 
 ## Pros of having developers write
 
@@ -73,7 +64,7 @@ Documentation generated from source files is feature-based. It's the equivalent 
 
 If developers write the documentation in the source, most likely the result will be somewhat useless feature-based documentation. Here's a text one of my colleagues, a project manager, sent me about the challenges he's facing with documentation:
 
-<img src="images/briantext.png" alt="Text about dependencies and workflows" /></a>
+<img src="images/briantext.png" alt="Text about dependencies and workflows" />
 
 Capturing and describing the interdependencies, goals, workflows, and other tasks that cut across endpoints and setups is more of a task suited to a technical writer, not a developer who is simply defining a parameter in the source file of a class he or she created.
 

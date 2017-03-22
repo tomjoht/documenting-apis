@@ -6,12 +6,11 @@ url: /
 
 destination: _site
 image_path: docs
-port: 4000
+port: 5000
 highlighter: rouge
 github_editme_path: https://github.com/amzn/appstore-alexa-docs/
 
 target: pdf
-encoding: ISO-8859-1
 
 image_path: docs
 
@@ -24,6 +23,8 @@ kramdown:
 
 collections:
   docs:
+    output: true
+  frontmatter:
     output: true
   search:
     output: true
@@ -56,7 +57,7 @@ defaults:
       type: search
   -
     scope:
-      path: "images"
+      path: images
     values:
       image: true
 

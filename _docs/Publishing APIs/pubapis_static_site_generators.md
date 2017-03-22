@@ -7,8 +7,6 @@ weight: 5.8
 section: publishingapis
 ---
 
-## What are static site generators
-
 Static site generators are a breed of website compilers that package up a group of files (usually written in Markdown) and make them into a website. There are more than 350 different static site generators. You can browse them at [staticgen.com](http://www.staticgen.com/).
 
 Jekyll is one of the most popular static site generators. All of my help content is on Jekyll. You can publish a fully functional tech comm website that includes content re-use, conditional filtering, variables, PDF output, and everything else you might need as a technical writer.
@@ -107,7 +105,8 @@ The [Aviator API documentation theme](https://github.com/CloudCannon/Aviator-Jek
 
 <a href="https://github.com/CloudCannon/Aviator-Jekyll-Theme"><img src="images/aviatortheme.png" alt="Cloud Cannon Aviator theme" /></a>
 
-{% include note.html content="If you're on a Mac (with Rubygems and Jekyll installed), building Jekyll sites is a lot simpler. But even if you're on Windows, it won't matter for this tutorial. You'll be using CloudCannon, a SaaS website builder product, to build the Jekyll files." %}
+{: .note}
+If you're on a Mac (with Rubygems and Jekyll installed), building Jekyll sites is a lot simpler. But even if you're on Windows, it won't matter for this tutorial. You'll be using CloudCannon, a SaaS website builder product, to build the Jekyll files.
 
 ### a. Download the Jekyll Aviator theme
 
@@ -299,11 +298,13 @@ The site should appear as follows:
 
 You can see my site at [http://delightful-nightingale.cloudvent.net/](http://delightful-nightingale.cloudvent.net/). The password is `stcsummit`.
 
-{% include tip.html content="If your endpoint doesn't appear, you probably have invalid YML syntax. Make sure the left edge of the response is at least one tab (4 spaces) in." %}
+{: .tip}
+If your endpoint doesn't appear, you probably have invalid YML syntax. Make sure the left edge of the response is at least one tab (4 spaces) in.
 
 Each time you save the site, CloudCannon actually rebuilds the Jekyll files into the site that you see.
 
-{% include note.html content="If you switch between the code editor and visual display, the code sample gets mangled. (The CloudCannon editor will convert the https path into a link.) This is a bug in CloudCannon that will be fixed." %}
+{: .note}
+If you switch between the code editor and visual display, the code sample gets mangled. (The CloudCannon editor will convert the https path into a link.) This is a bug in CloudCannon that will be fixed.
 
 ## Doc Websites Using Jekyll
 

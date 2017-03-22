@@ -7,8 +7,6 @@ weight: 6.2
 section: publishingapis
 ---
 
-## Can I use a help authoring tool?
-
 Help authoring tools (HATs) refer to the common toolset often used by technical writers. Common HATs include MadCap Flare, Adobe Robohelp, Author-it, and more. Sure, you can use these tools to create API documentation.
 
 Here's a sample help output from Flare for the Photobucket API:

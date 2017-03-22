@@ -10,9 +10,6 @@ sidebar: docapis
 section: likeadeveloper
 ---
 
-
-## cURL is a cross-platform way to show requests and responses
-
 Before moving on, let's pause a bit and learn more about cURL.
 
 One of the advantages of REST APIs is that you can use almost any programming language to call the endpoint. The endpoint is simply a resource located on a web server at a specific path.
@@ -21,7 +18,7 @@ Each programming language has a different way of making web calls. Rather than e
 
 cURL provides a generic, language agnostic way to demonstrate HTTP requests and responses. Users can see the format of the request, including any headers and other parameters. Your users can translate this into the specific format for the language they're using.
 
-{{important}}Almost every API shows how to interact with the API using cURL." %}
+{{important}}Almost every API shows how to interact with the API using cURL.
 
 ## REST APIs follow the same model of the web
 
@@ -89,7 +86,8 @@ When you type an address into a website, you see only the body of the response. 
 | PUT | Update a resource |
 | DELETE | Delete a resource |
 
-{% include note.html content="GET is used by default with cURL requests. If you use cURL to make HTTP requests other than GET, you need to specify the HTTP method." %}
+{: .note}
+GET is used by default with cURL requests. If you use cURL to make HTTP requests other than GET, you need to specify the HTTP method.
 
 ## Unpacking the weather API cURL request
 
@@ -111,7 +109,8 @@ Here's what the commands mean:
 | `--include` | Whether to show the headers in the response. Also represented by `-i`. |
 | `-H`| Submits a custom header. Include an additional `-H` for each header key-value pair you're submitting. |
 
-{% include note.html content="Most cURL commands have a couple of different representations. <code>--get</code> can also be written as <code>-X GET</code>." %}
+{: .note}
+Most cURL commands have a couple of different representations. <code>--get</code> can also be written as <code>-X GET</code>.
 
 ## Query strings and parameters
 
@@ -168,12 +167,20 @@ Fill in the blanks to see how much you remember:
 * `-X POST` means...
 * `-d` means...
 
-{% unless site.target == "pdf" %}See the <a href="docapis_answers.html#curlParameters">cURL parameters</a> on the answer page to check your responses.{% endunless %}
+The answers are listed at the bottom of the page.
 
-{% if site.target == "pdf" %}See the <a href="docapis_answers.html#curlParameters">cURL parameters</a> on the answer page to check your responses.{% endif %}
-
-{% include tip.html content="When you use cURL, the terminal and iTerm on the Mac provide a much easier experience than using the command prompt in Windows. If you're going to get serious about API documentation but you're still on a PC, consider switching. There are a lot of utilities that you install through a terminal that <i>just work</i> on a Mac." %}
+{: .tip}
+When you use cURL, the terminal and iTerm on the Mac provide a much easier experience than using the command prompt in Windows. If you're going to get serious about API documentation but you're still on a PC, consider switching. There are a lot of utilities that you install through a terminal that <i>just work</i> on a Mac.
 
 ## More Resources
 
 To learn more about cURL with REST documentation, see [REST-esting with cURL](http://blogs.plexibus.com/2009/01/15/rest-esting-with-curl/).
+
+<hr/>
+
+**Answers to cURL activity**:
+
+* `-i` means to include the response header</li>
+* `-H` means to pass a header into the request</li>
+* `-X POST` means to use the `POST` method in the request</li>
+* `-d` means to include data in the request</li>

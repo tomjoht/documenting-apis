@@ -10,8 +10,6 @@ sidebar: docapis
 section: publishingapis
 ---
 
-## About version control systems
-
 Pretty much every IT shop uses some form of version control with their software code. Version control is how developers collaborate and manage their work.
 
 If you're working in API documentation, you'll most likely need to plug into your developer's version control system to get code. Or you may be creating branches and adding or editing documentation there.

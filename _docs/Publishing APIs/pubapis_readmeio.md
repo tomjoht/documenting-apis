@@ -7,8 +7,6 @@ weight: 5.9
 section: publishingapis
 ---
 
-## Software as a service sites
-
 You can publish documentation on hosted platforms specifically built for API and developer documentation. Two promising platforms are the following:
 
 * [readme.io](http://readme.io)

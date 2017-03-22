@@ -8,9 +8,6 @@ sidebar: docapis
 section: docnonref
 ---
 
-
-## Authentication and authorization overview
-
 Before users can make requests with your API, they'll usually need to register for some kind of application key, or learn other ways to authenticate the requests.
 
 APIs vary in the way they authenticate users. Some APIs just require you to include an API key in the request header, while other APIs require elaborate security due to the need to protect sensitive data, prove identity, and ensure the requests aren't tampered with.
@@ -92,13 +89,7 @@ If the string matches the signature in the request header, it accepts the reques
 
 Here's a diagram depicting this workflow:
 
-{% unless site.target == "pdf" %}
-<img src="images/restapi_hmac.svg" alt="HMAC workflow" />
-{% endunless %}
-
-{% if site.target == "pdf" %}
 <img src="images/restapi_hmac.png" alt="HMAC workflow" />
-{% endif %}
 
 The important point is that the secret key (critical to reconstructing the hash) is known only to the sender and receiver. The secret key is not included in the request.
 
@@ -120,13 +111,7 @@ In contrast, three-legged OAuth is used when you need to protect sensitive data.
 
 Here's the basic workflow of OAuth 2.0:
 
-{% unless site.target == "pdf" %}
-<img src="images/restapi_oauth.svg" alt="OAuth workflow" />
-{% endunless %}
-
-{% if site.target == "pdf" %}
 <img src="images/restapi_oauth.png" alt="OAuth workflow" />
-{% endif %}
 
 First the consumer application sends over an application key and secret to a login page at the authentication server. If authenticated, the authentication server responds to the user with an access token.
 

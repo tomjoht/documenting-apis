@@ -9,9 +9,6 @@ sidebar: docapis
 section: otherapis
 ---
 
-
-## The challenge
-
 Use the Klout API to get your Klout score and a list of your influencers and influencees.
 
 ## About Klout
@@ -40,7 +37,8 @@ Instead of using the API console, you can also submit the request via your brows
 http://api.klout.com/v2/identity.json/twitter?screenName=tomjohnson&amp;key={your api key}
 ```
 
-{{note}}In place of `{your api key}`, insert your own API key. (I initially displayed mine here only to find that bots grabbed it and made thousands of requests, which ended up disabling my API key.)" %}
+{: .note}
+In place of `{your api key}`, insert your own API key. (I initially displayed mine here only to find that bots grabbed it and made thousands of requests, which ended up disabling my API key.)" %}
 
 My Klout ID is `1134760`.
 
@@ -299,7 +297,8 @@ Using jQuery, you can iterate through the JSON payload and pull out the informat
 </body>
 </html>
 ```
-{% include note.html content="Remember to swap in your own API key in place of <code>APIKEY</code>." %}
+{: .note}
+Remember to swap in your own API key in place of <code>APIKEY</code>.
 The result looks like this:
 
 <img src="images/kloutinfluencelists.png" alt="Klout result" />

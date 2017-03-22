@@ -4,11 +4,8 @@ permalink: /docapis_completion.html
 course: "Documenting REST APIs"
 weight: 4.4
 sidebar: docapis
-section: nativelibraryapis
+section: otherapis
 ---
-
-
-## You finished!
 
 Congratulations, you finished the documenting REST APIs section of the course. You've learned the core of documenting REST APIs. We haven't covered publishing tools or strategies. Instead, this part of the course has focused on the creating content, which should always be the first consideration.
 

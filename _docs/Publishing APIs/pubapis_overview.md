@@ -7,8 +7,6 @@ weight: 4.5
 section: publishingapis
 ---
 
-## Publishing context
-
 In earlier parts of this workshop, we used a simple [Weather API from Mashape](https://www.mashape.com/fyhao/weather-13) to demonstrate how to use a REST API. Now we'll explore various tools to publish information from the same Mashape Weather API.
 
 ## Why focus on publishing API docs?

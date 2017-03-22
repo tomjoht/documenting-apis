@@ -7,8 +7,6 @@ weight: 6.7
 section: designpatterns
 ---
 
-## Minimize clicking
-
 One of the most stark differences between regular GUI documentation and developer documentation is that developer doc pages tend to be longer. In a [post on designing great API docs](http://blog.parse.com/learn/engineering/designing-great-api-docs/), the writers at Parse explain
 
 >Minimize Clicking

@@ -7,18 +7,17 @@ weight: 5.2
 section: publishingapis
 ---
 
-
-## Managing reviews through Github
-
 In the previous step, you used Github Desktop to manage the workflow of committing files and creating requests. In this tutorial, you'll do a similar thing but using the browser-based interface that Github provides rather than using a terminal or Github Desktop.
 
-{% include tip.html content="When you ask developers to review content, ask the specific developer who created the feature you're documenting. Developer tasks are usually specific. One developer may not understand what another developer is really doing (beyond a superficial level)." %}
+{: .tip}
+When you ask developers to review content, ask the specific developer who created the feature you're documenting. Developer tasks are usually specific. One developer may not understand what another developer is really doing (beyond a superficial level).
 
 ## Make edits in a separate branch
 
 By default, your new repository has one branch called "Master." Usually when you're making changes or reviews/edits, you create a new branch and make all the changes in the branch. Then when finished, the repo owner merges edits from the branch into the master through a "pull request."
 
-{{note}}Although you can perform these operations using Git commands from your terminal, you can also perform the actions through the browser interface. This might be helpful if you have less technical people making edits to your content." %}
+{: .note}
+Although you can perform these operations using Git commands from your terminal, you can also perform the actions through the browser interface. This might be helpful if you have less technical people making edits to your content.
 
 To make edits in a separate branch:
 
@@ -65,7 +64,8 @@ Now pretend you are the project owner, and you see that you received a new pull 
 
 	<img src="images/github_files_changed.png" alt="Github files changed" />
 
-	{{note}}If you only want to implement some of the edits, go into the sme review branch and make the updates before processing the pull request. The pull request doesn't give you a line-by-line option about which changes you want to accept or reject (like in Microsoft Word's Track Changes). Merging pull requests is an all-or-nothing process." %}
+	{: .note}
+If you only want to implement some of the edits, go into the sme review branch and make the updates before processing the pull request. The pull request doesn't give you a line-by-line option about which changes you want to accept or reject (like in Microsoft Word's Track Changes). Merging pull requests is an all-or-nothing process.
 
 	Note also that if the pull request is made against an older version of the master, such that the master's original content no longer exists or has moved elsewhere, the merges will be more difficult to make.
 

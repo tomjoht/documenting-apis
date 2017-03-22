@@ -7,8 +7,6 @@ weight: 4.7
 section: publishingapis
 ---
 
-## API docs have tremendous variety
-
 Perhaps no other genre of technical documentation has such variety in the outputs as API documentation. Almost every API documentation site looks unique. REST APIs are as diverse as different sites on the web, each with their own branding, navigation, terminology, and style.
 
 ## No common tooling

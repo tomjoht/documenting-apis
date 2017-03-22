@@ -10,14 +10,12 @@ sidebar: docapis
 section: docendpoints
 ---
 
-
-## Shift perspectives: Now you're the technical writer
-
 Until this point, you've been acting as a developer with the task of integrating the weather data into your site. The point was to help you understand the type of information developers need and how they use APIs.
 
 Now let's shift perspectives. Now you're a technical writer working with the Mashape weather API team. The team is asking you to document a new endpoint.
 
-{% include note.html content="For this exercise, you could equally document a new endpoint for the Aeris Weather API, but since that API is already quite robust, we'll keep it simple and work with the more minimalist Mashape weather API." %}
+{: .note}
+For this exercise, you could equally document a new endpoint for the Aeris Weather API, but since that API is already quite robust, we'll keep it simple and work with the more minimalist Mashape weather API.
 
 ## You have a new endpoint to document
 
@@ -128,4 +126,5 @@ Open up a new text file and create sections for each of these elements.
 
 Each of your endpoints should follow this same pattern and structure. A common template helps increase consistency and familiarity/predictability with how users consume the information.
 
-{% include note.html content="Although there are automated ways to publish API docs, we're focusing on content rather than tools in this course. For the sake of simplicity, try just using a text editor and [Markdown syntax](https://help.github.com/articles/github-flavored-markdown)." %}
+{: .note}
+Although there are automated ways to publish API docs, we're focusing on content rather than tools in this course. For the sake of simplicity, try just using a text editor and [Markdown syntax](https://help.github.com/articles/github-flavored-markdown).

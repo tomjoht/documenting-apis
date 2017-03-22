@@ -10,9 +10,6 @@ sidebar: docapis
 section: likeadeveloper
 ---
 
-
-## Making use of the JSON response
-
 Seeing the response from cURL or Postman is cool, but how do you make use of the JSON data?
 
 With most API documentation, you don't need to show how to make use of JSON data. You assume that developers will use their JavaScript skills to parse through the data and display it appropriately in their apps.
@@ -52,7 +49,7 @@ Mashape [provides some sample code](http://docs.mashape.com/javascript) to parse
 
 7. The Postman code sample needs one more parameter: `dataType`. Add `"dataType": "json"` as parameter in `settings`.
 
-	{{warning}} Make sure you capitalize the <code>T</code> in <code>dataType</code>." %}
+	{{warning}} Make sure you capitalize the <code>T</code> in <code>dataType</code>.
 
 	Your final code should look like this:
 

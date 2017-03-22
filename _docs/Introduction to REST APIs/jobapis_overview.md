@@ -2,13 +2,10 @@
 title: The job market for API technical writers
 course: "Documenting REST APIs"
 permalink: /jobapis_overview.html
-weight: 8.1
+weight: 1.21
 sidebar: docapis
 section: introtoapis
 ---
-
-
-## Demand is high
 
 Technical writers who can write developer documentation are in high demand, especially in the Silicon Valley area. There are plenty of technical writers who can write documentation for graphical user interfaces but not many who can navigate the developer landscape to provide highly technical documentation for developers working in code.
 

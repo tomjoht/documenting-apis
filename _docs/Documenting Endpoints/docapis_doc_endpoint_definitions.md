@@ -10,7 +10,6 @@ sidebar: docapis
 section: docendpoints
 ---
 
-
 Now let's document the endpoints. When you list the endpoints, the term you use to describe this section also varies. Here are some terms you might see:
 
 * Requests
@@ -44,7 +43,8 @@ Better yet, put the path parameter in another color to set it off:
 /campaigns/<span class="parameter">{campaign_id}</span>/actions/send
 </pre>
 
-{% include tip.html content="If you set off your code block with `pre` tags, you can use `span` tags to set off specific elements in different colors." %}
+{: .tip}
+If you set off your code block with `pre` tags, you can use `span` tags to set off specific elements in different colors.
 
 Curly braces are a convention that users will understand. In the above example, almost no URL uses curly braces in the syntax, so the `{campaign_id}` is an obvious placeholder.
 
@@ -68,7 +68,8 @@ And here's an example from Linkedin's API:
 
 <a href="https://developer.linkedin.com/docs/rest-api"><img src="images/linkedinexample.png" alt="Linkedin Example" /></a>
 
-{% include tip.html content="Sometimes the method is referred to as the \"verb.\" GET, PUT, POST, and DELETE are all verbs or actions, after all." %}
+{: .tip}
+Sometimes the method is referred to as the \"verb.\" GET, PUT, POST, and DELETE are all verbs or actions, after all.
 
 ## Your turn to try: Write the endpoint definition for surfreport
 

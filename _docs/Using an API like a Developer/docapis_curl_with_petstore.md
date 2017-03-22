@@ -8,9 +8,6 @@ sidebar: docapis
 section: likeadeveloper
 ---
 
-
-## Using Petstore API
-
 Our sample weather API from Mashape doesn't allow you to use anything but a GET method, so for this example, we'll use the [petstore API from Swagger](http://petstore.swagger.io/), but without actually using the Swagger UI (which is something we'll explore later). For now, we just need an API that we can create, update, and delete content from. (You're just getting familiar with cURL here.)
 
 <a href="http://petstore.swagger.io/"><img src="images/petstore.png" alt="Swagger Petstore" /></a>
@@ -21,7 +18,8 @@ In this example, you'll create a new pet, update the pet, get the pet's ID, dele
 
 To create a pet, you have to pass a JSON message in the request body. Rather than trying to encode the JSON and pass it in the URL, you'll store the JSON in a file and reference the file.
 
-{{tip}}A lot of APIs require you to post requests containing JSON messages in the body. This is often how you configure a service. The list of JSON key-value pairs that the API accepts is called the "Model" in the Petstore API." %}
+{: .tip}
+A lot of APIs require you to post requests containing JSON messages in the body. This is often how you configure a service. The list of JSON key-value pairs that the API accepts is called the "Model" in the Petstore API.
 
 1.  Insert the following into a file called mypet.json. This information will be passed in the `-d` parameter of the cURL request:
 
@@ -48,7 +46,8 @@ To create a pet, you have to pass a JSON message in the request body. Rather tha
 
 2.  Change the first `id` value to another integer (whole number) and the pet name of `fluffy`.
 
-    {% include note.html content="Use unique numbers and names that others aren't likely to also use. Also, don't begin your ID with the number 0." %}
+    {: .note}
+Use unique numbers and names that others aren't likely to also use. Also, don't begin your ID with the number 0.
 
 3.  Save the file in this directory: `Users/YOURUSERNAME`. (Replace YOURUSERNAME with your actual user name on your computer.)
 4.  In your Terminal, browse to the directory where you saved the mypet.json file. (Usually the default directory is `Users/YOURUSERNAME` &mdash; hence the previous step.)
@@ -71,7 +70,8 @@ To create a pet, you have to pass a JSON message in the request body. Rather tha
     {"id":51231236,"category":{"id":4,"name":"testexecution"},"name":"fluffernutter","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
     ```
 
-    {% include tip.html content="Feel free to run this same request a few times more. REST APIs are \"idempotent,\" which means that running the same request more than once won't end up duplicating the results (you just create one pet here, not multiple pets). Todd Fredrich explains idempotency by [comparing it to a pregnant cow](http://www.restapitutorial.com/lessons/idempotency.html). Let's say you bring over a bull to get a cow pregnant. Even if the bull and cow mate multiple times, the result will be just one pregnancy, not a pregnancy for each mating session." %}
+    {: .tip}
+Feel free to run this same request a few times more. REST APIs are \"idempotent,\" which means that running the same request more than once won't end up duplicating the results (you just create one pet here, not multiple pets). Todd Fredrich explains idempotency by [comparing it to a pregnant cow](http://www.restapitutorial.com/lessons/idempotency.html). Let's say you bring over a bull to get a cow pregnant. Even if the bull and cow mate multiple times, the result will be just one pregnancy, not a pregnancy for each mating session.
 
 ### Update your pet
 

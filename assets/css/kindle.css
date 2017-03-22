@@ -31,7 +31,22 @@ li {
 	font-weight: bold
 }
 
-h1 {margin-top: 1em}
-h2 {margin-top: 1em}
-h3 {margin-top: 1em}
-h4 {margin-top: 1em}
+h1, h2, h3, h4 {margin-top: 1em }
+
+<style>
+.level1 { margin-left: 1em}
+.level1items { margin-left: 2em}
+</style>
+
+div#bookToc ul#docnavsidebar li.level1items a, li.level2items, li.level3items {
+    font-size: 1em;
+}
+
+inspector-stylesheet:1
+div#bookToc ul#docnavsidebar > li {
+    list-style-type: none;
+}
+
+div#bookToc li.level1 a, div#bookToc li.level2 a, div#bookToc li.level3 a {
+font-size: 1.2em;
+}

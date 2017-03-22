@@ -7,7 +7,6 @@ sidebar: docapis
 section: likeadeveloper
 ---
 
-
 It's better that you install cURL before the course so that you aren't bogged down with technical issues when you're trying to focus on the course material. cURL is usually available by default on Macs but requires some installation on Windows.
 
 ## Installing cURL
@@ -62,11 +61,13 @@ To make a test API call, submit the following:
 curl --get -k --include "https://simple-weather.p.mashape.com/aqi?lat=1.3319164&lng=103.7231246" -H "X-Mashape-Key: EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p" -H "Accept: text/plain"
 ```
 
-{% include note.html content="In Windows, Ctrl+ V doesn't work; instead, you right-click and then select Paste." %}
+{: .note}
+In Windows, Ctrl+ V doesn't work; instead, you right-click and then select Paste.
 
 You should get back a two-digit number in the response. (This is the "air quality index" for the weather.)
 
-{{tip}}If you're on Windows 8.1 and you encounter an error that says, "The program can't start because MSVCR100.dll is missing from your computer," see <a href="http://www.faqforge.com/windows/fix-the-program-cant-start-because-msvcr100-dll-is-missing-from-your-computer-error-on-windows/">this article</a> and install the suggested package." %}
+{: .tip}
+If you're on Windows 8.1 and you encounter an error that says, "The program can't start because MSVCR100.dll is missing from your computer," see <a href="http://www.faqforge.com/windows/fix-the-program-cant-start-because-msvcr100-dll-is-missing-from-your-computer-error-on-windows/">this article</a> and install the suggested package.
 
 ## Notes about using cURL with Windows
 

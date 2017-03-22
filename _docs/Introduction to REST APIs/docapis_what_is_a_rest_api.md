@@ -8,10 +8,8 @@ sidebar: docapis
 section: introtoapis
 ---
 
-
-## An API is an interface between systems
-
-{% include note.html content="This course is all about learning by doing, but while <i>doing</i> various activities, I'll periodically pause and dive into some more abstract concepts to fill in more detail. This is one of those deep dive moments." %}
+{: .note}
+This course is all about learning by doing, but while <i>doing</i> various activities, I'll periodically pause and dive into some more abstract concepts to fill in more detail. This is one of those deep dive moments.
 
 In general, an API (or Application Programming Interface) provides an interface between two systems. It's like a cog that allows two systems to interact with each other.
 
@@ -65,7 +63,7 @@ A RESTful API might not follow all of the official characteristics of REST as ou
 
 Here's the general model of a REST API:
 
-<img src="images/restapi_restapi.png alt="REST API" />
+<img src="images/restapi_restapi.png" alt="REST API" />
 
 As you can see, there's a request and a response between a client to the API server. The client and server can be based in any language, but HTTP is the protocol used to transport the message. This request-and-response pattern is fundamentally how REST APIs work.
 
@@ -85,7 +83,8 @@ Another unique aspect of REST is that REST APIs focus on *resources* (that is, *
 
 Common methods include GET (read), POST (create), PUT (update), and DELETE (remove). The URL usually includes query parameters that specify more details about the representation of the resource you want to see. For example, you might specify (in a query parameter) that you want to limit the display of 5 instances of the resource.
 
-{{tip}}The relationship between resources and methods is often described in terms of "nouns" and "verbs." The resource is the noun, because it is an object or thing. The verb is what you're doing with that noun. Combining nouns with verbs is how you form the language in REST." %}
+{: .tip}
+The relationship between resources and methods is often described in terms of "nouns" and "verbs." The resource is the noun, because it is an object or thing. The verb is what you're doing with that noun. Combining nouns with verbs is how you form the language in REST.
 
 ### Sample URLs for a REST API
 
@@ -111,13 +110,7 @@ The terminology of "URIs" and "GET requests" and "message responses" transported
 
 If you open a browser and go to http://idratherbewriting.com, you're really using HTTP protocol (`http://`) to submit a GET request to the resource available on a web server. The response from the server sends the content at this resource back to you using HTTP. Your browser is just a client that makes the message response look pretty.
 
-{% unless site.target == "pdf" %}
-<img src="images/restapi_www.svg" alt="Web as REST API" />
-{% endunless %}
-
-{% if site.target == "pdf" %}
 <img src="images/restapi_www.png" alt="Web as REST API" />
-{% endif %}
 
 You can see this response in cURL if you open a Terminal prompt and type `curl http://idratherbewriting.com`.
 

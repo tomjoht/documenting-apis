@@ -7,12 +7,9 @@ keywords:
 course: "Documenting REST APIs"
 weight: 3.1
 sidebar: docapis
-published: false
 section: docendpoints
 ---
 
-
-## Full working example
 In this example, let's pull together the various parts you've worked on to showcase the full example. I chose to format mine in Markdown syntax in a text editor.
 
 Here's my example.
@@ -166,6 +163,7 @@ curl --get --include 'https://simple-weather.p.mashape.com/surfreport/123?units=
 
 <p>The following code samples shows how to use the surfreport endpoint to get the surf height for a specific beach. </p>
 
+{% comment %}  
 <pre class="html">
 <!DOCTYPE html>
 <head>
@@ -194,6 +192,37 @@ $.ajax(settings).done(function (response) {
 <div id="surfheight"></div>
 </body>
 </html>
+</pre>
+{% endcomment %}
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+&lt;script src=&quot;http://code.jquery.com/jquery-2.1.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+var settings = {
+  &quot;async&quot;: true,
+  &quot;crossDomain&quot;: true,
+  &quot;dataType&quot;: &quot;json&quot;,
+  &quot;url&quot;: &quot;https://simple-weather.p.mashape.com/surfreport/25?days=1&amp;units=metric&quot;,
+  &quot;method&quot;: &quot;GET&quot;,
+  &quot;headers&quot;: {
+    &quot;accept&quot;: &quot;application/json&quot;,
+    &quot;x-mashape-key&quot;: &quot;APIKEY&quot;
+  }
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+  $(&quot;#surfheight&quot;).append(response.query.results.channel.surf.height);
+});
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;Surf Height&lt;/h2&gt;
+&lt;div id=&quot;surfheight&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
 
 <p>In this example, the <code>ajax</code> method from jQuery is used because it allows us to load a remote resource asynchronously.</p>

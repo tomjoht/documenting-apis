@@ -7,8 +7,6 @@ weight: 7.1
 section: nativelibraryapis
 ---
 
-## About the sample project
-
 In order to understand documentation for Java APIs, it helps to have a context of some sort. As such, I created a simple little Java application to demonstrate how the various tags get rendered into the Javadoc.
 
 <a href="https://github.com/tomjohnson1492/acmeproject"><img src="images/acmeprojectgithub.png" alt="ACME project" /></a>

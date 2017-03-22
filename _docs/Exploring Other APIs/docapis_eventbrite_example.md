@@ -8,9 +8,6 @@ keywords: Eventbrite API example, REST APIs
 section: otherapis
 ---
 
-
-## The challenge
-
 Use the EventBrite API to get the event title and description of [this event](https://www.eventbrite.com/myevent?eid=17920884849).
 
 ## About EventBrite
@@ -28,13 +25,15 @@ To get event information, we'll use the [event](https://www.eventbrite.com/devel
 
 <a href="https://www.eventbrite.com/developer/v3/endpoints/events/"><img src="images/eventsendpointeventbrite.png" alt="EventBrite Event" /></a>
 
-{% include note.html content="Instead of calling them \"resources,\" the EventBrite API uses the term \"objects.\"" %}
+{: .note}
+Instead of calling them \"resources,\" the EventBrite API uses the term \"objects.\"" %}
 
 The events object allows us to "retrieve a paginated response of public event objects from across Eventbrite's directory, regardless of which user owns the event."
 
 The events object has a lot of different endpoints available. However, the GET `events/:id/` URL, described [here](https://www.eventbrite.com/developer/v3/endpoints/events/#ebapi-get-events-id) seems to provide what we need.
 
-{% include note.html content="The Eventbrite docs convention is to use <code>:id</code> instead of <code>{id}</code> to represent values you pass into the endpoint." %}
+{: .note}
+The Eventbrite docs convention is to use <code>:id</code> instead of <code>{id}</code> to represent values you pass into the endpoint.
 
 ## 3. Construct the request
 
@@ -139,7 +138,8 @@ The information has a lot more than we need. We just want to display the event's
 
 We covered this approach earlier in the course, so I won't go into much detail here.
 
-{{note}}My API key is hidden from the above code sample to protect it from unauthorized access." %}
+{: .note}
+My API key is hidden from the above code sample to protect it from unauthorized access.
 
 Here's the result:
 

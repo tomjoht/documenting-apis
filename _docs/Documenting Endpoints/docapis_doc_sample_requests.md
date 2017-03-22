@@ -10,9 +10,6 @@ sidebar: docapis
 section: docendpoints
 ---
 
-
-## The sample request clarifies how to use the endpoint
-
 Although you've already listed the endpoint and parameters, you should also include one or more sample requests that shows the endpoint integrated with parameters in an easy-to-understand way.
 
 In the CityGrid Places API, the basic places endpoint is as follows:

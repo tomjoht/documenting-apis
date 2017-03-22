@@ -8,9 +8,6 @@ sidebar: docapis
 section: docnonref
 ---
 
-
-## About the Overview section
-
 The overview explains what you can do with the API (high-level business goals), and who the API is for. Too often with API documentation (perhaps because the content is often written by developers), the documentation gets quickly mired in technical details without ever explaining clearly what the API is used for. Don't lose sight of the overall purpose and business goals of your API by getting lost in the endpoints.
 
 ## Sample overview

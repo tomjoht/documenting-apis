@@ -8,8 +8,6 @@ sidebar: docapis
 section: otherapis
 ---
 
-
-## Let's explore more APIs
 Now it's time to explore some other REST APIs and code for some specific scenarios. This experience will give you more exposure to different REST APIs, how they're organized, the complexities and interdependency of endpoints, and more.
 
 ## Attack the challenge first, then read the answer

@@ -7,12 +7,8 @@ keywords:
 course: "Documenting REST APIs"
 weight: 3.0
 sidebar: docapis
-published: false
 section: docendpoints
 ---
-
-
-## REST APIs are language agnostic and interoperable
 
 One aspect of REST APIs that facilitates widespread adoption is that they aren't tied to a specific programming language. Developers can code their applications in any language, from Java to Ruby to JavaScript, Python, C#, Ruby, Node JS, or something else. As long as they can make an HTTP web request in that language, they can use the API. The response from the web request will contain the data in either JSON or XML.
 
@@ -44,22 +40,24 @@ Once you install them, generating a code sample is a one-click operation:
 
 The Postman app has most of these code generators built in by default.
 
-{% include note.html content="Although these code generators are probably helpful, they may or may not work for your API. Always review code samples with developers. In most cases, developers supply the code samples for the documentation, and technical writers briefly comment on the code samples." %}
+{: .note}
+Although these code generators are probably helpful, they may or may not work for your API. Always review code samples with developers. In most cases, developers supply the code samples for the documentation, and technical writers briefly comment on the code samples.
 
 ## Generate a JavaScript code sample from Postman
 
-{% include note.html content="We covered some of this material earlier in more depth, so here I just cover it more briefly." %}
+{: .note}
+We covered some of this material earlier in more depth, so here I just cover it more briefly.
 
 To generate a JavaScript code snippet from Postman:
 
-1. Configure a weatherdata request in Postman (or select one you've saved).
-2. Below the Send button, click the **Generate Code Snippets** button.
-3. In the dialog box that appears, browse the available code samples using the drop-down menu. Note how your request data is implemented into each of the different code sample templates.
-4. Select the **JavaScript > jQuery AJAX** code sample:
+1.  Configure a weatherdata request in Postman (or select one you've saved).
+2.  Below the Send button, click the **Generate Code Snippets** button.
+3.  In the dialog box that appears, browse the available code samples using the drop-down menu. Note how your request data is implemented into each of the different code sample templates.
+4.  Select the **JavaScript > jQuery AJAX** code sample:
 
     <img src="images/postman_code_snippets.png" alt="Postman code snippet" />
 
-5. Copy the content by clicking the **Copy** button.
+5.  Copy the content by clicking the **Copy** button.
 
 This is the JavaScript code that you can attach to an event on your page.
 
@@ -70,73 +68,73 @@ You usually don't need to show the code sample on a working HTML file, but if yo
 1.  Create a new HTML file with the basic HTML elements:
 
     ```html
-	<!DOCTYPE html>
-	<head>
-	<title>My sample page</title>
-	</head>
-	<body>
+    <!DOCTYPE html>
+    <head>
+    <title>My sample page</title>
+    </head>
+    <body>
 
-	</body>
-	</html>
+    </body>
+    </html>
     ```
 
 2.  Insert the JavaScript code you copied inside some `script` tags inside the `head`:
 
     ```html
-	<!DOCTYPE html>
-	<head>
-	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script>
-	var settings = {
-	  "async": true,
-	  "crossDomain": true,
-	  "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.354108&lng=-121.955236",
-	  "method": "GET",
-	  "headers": {
-	    "accept": "application/json",
-	    "x-mashape-key": "APIKEY"
-	  }
-	}
+    <!DOCTYPE html>
+    <head>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+    var settings = {
+      "async": true,
+      "crossDomain": true,
+      "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.354108&lng=-121.955236",
+      "method": "GET",
+      "headers": {
+        "accept": "application/json",
+        "x-mashape-key": "APIKEY"
+      }
+    }
 
-	$.ajax(settings).done(function (response) {
-	  console.log(response);
-	});
-	</script>
-	</head>
-	<body>
+    $.ajax(settings).done(function (response) {
+      console.log(response);
+    });
+    </script>
+    </head>
+    <body>
 
-	</body>
-	</html>
+    </body>
+    </html>
     ```
 
 3.  The Mashape Weather API requires the `dataType` parameter, which Postman doesn't automatically include. Add `"dataType": "json",` in the list of `settings`:
 
     ```html
-	<!DOCTYPE html>
-	<head>
-	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script>
-	var settings = {
-	  "async": true,
-	  "crossDomain": true,
-	  "dataType": "json",
-	  "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.354108&lng=-121.955236",
-	  "method": "GET",
-	  "headers": {
-	    "accept": "application/json",
-	    "x-mashape-key": "APIKEY"
-	  }
-	}
+    <!DOCTYPE html>
+    <head>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+    var settings = {
+      "async": true,
+      "crossDomain": true,
+      "dataType": "json",
+      "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.354108&lng=-121.955236",
+      "method": "GET",
+      "headers": {
+        "accept": "application/json",
+        "x-mashape-key": "APIKEY"
+      }
+    }
 
-	$.ajax(settings).done(function (response) {
-	  console.log(response);
-	});
-	</script>
-	</head>
-	<body>
-	hello
-	</body>
-	</html>
+    $.ajax(settings).done(function (response) {
+      console.log(response);
+    });
+    </script>
+    </head>
+    <body>
+    hello
+    </body>
+    </html>
     ```
 
 4. This code uses the `ajax` method from jQuery. The parameters are defined in a variable called `settings` and then passed into the method. The `ajax` method will make the request and assign the response to the `done` method's argument (`response`). The `response` object will be logged to the console.
@@ -150,33 +148,33 @@ You should see the object logged to the console.
 Let's say you wanted to pull out the `sunrise` time and append it to a tag on the page. You could do so like this:
 
 ```html
-	<!DOCTYPE html>
-	<head>
-	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script>
-	var settings = {
-	  "async": true,
-	  "crossDomain": true,
-	  "dataType": "json",
-	  "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.354108&lng=-121.955236",
-	  "method": "GET",
-	  "headers": {
-	    "accept": "application/json",
-	    "x-mashape-key": "APIKEY"
-	  }
-	}
+<!DOCTYPE html>
+<head>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script>
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "dataType": "json",
+  "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.354108&lng=-121.955236",
+  "method": "GET",
+  "headers": {
+    "accept": "application/json",
+    "x-mashape-key": "APIKEY"
+  }
+}
 
-	$.ajax(settings).done(function (response) {
-	  console.log(response);
-	  $("#sunrise").append(response.query.results.channel.astronomy.sunrise);
-	});
-	</script>
-	</head>
-	<body>
-	<h2>Sunrise time</h2>
-	<div id="sunrise"></div>
-	</body>
-	</html>
+$.ajax(settings).done(function (response) {
+  console.log(response);
+  $("#sunrise").append(response.query.results.channel.astronomy.sunrise);
+});
+</script>
+</head>
+<body>
+<h2>Sunrise time</h2>
+<div id="sunrise"></div>
+</body>
+</html>
 ```
 
 This code uses the `append` method from jQuery to assign a value from the response object to the `sunrise` ID tag on the page.
@@ -207,12 +205,11 @@ As a technical writer, add a code sample to the `surfreport/{beachId}` endpoint 
 
 Here's my approach:
 
-<div class="docSample">
-<p><b>Code example</b></p>
+###Code example###
 
-<p>The following code samples shows how to use the surfreport endpoint to get the surf conditions for a specific beach. In this case, the code shows the overall recommendation about whether to go surfing.</p>
+The following code samples shows how to use the surfreport endpoint to get the surf conditions for a specific beach. In this case, the code shows the overall recommendation about whether to go surfing.
 
-<pre>
+```
 <!DOCTYPE html>
 <head>
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -240,14 +237,14 @@ $.ajax(settings).done(function (response) {
 <div id="surfheight"></div>
 </body>
 </html>
-</pre>
+```
 
-<p>In this example, the <code>ajax</code> method from jQuery is used because it allows us to load a remote resource asynchronously.</p>
-<p>In the request, you submit the authorization through the header rather than directly in the endpoint path. The endpoint limits the days returned to 1 in order to increase the download speed.</p>
+In this example, the `ajax` method from jQuery is used because it allows us to load a remote resource asynchronously.
 
-<p>For demonstration purposes, the response is assigned to the <code>response</code> argument of the <code>done</code> method, and then written out to the <code>surfheight</code> tag on the page.</p>
+In the request, you submit the authorization through the header rather than directly in the endpoint path. The endpoint limits the days returned to 1 in order to increase the download speed.
 
-<p>We're just getting the surf height, but there's a lot of other data you could choose to display.</p>
-</div>
+For demonstration purposes, the response is assigned to the `response` argument of the `done` method, and then written out to the `surfheight` tag on the page.
+
+We're just getting the surf height, but there's a lot of other data you could choose to display.
 
 You might not include a detailed code sample like this for just one endpoint, but including some kind of code sample is almost always helpful.

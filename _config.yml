@@ -2,7 +2,7 @@ language: english
 target: jekyll
 
 # Link to home
-url: /
+url: http://learnapidoc.com/
 
 destination: _site
 image_path: docs

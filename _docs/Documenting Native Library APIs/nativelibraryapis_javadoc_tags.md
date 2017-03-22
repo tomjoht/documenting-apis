@@ -8,25 +8,23 @@ section: nativelibraryapis
 ---
 
 
-## About Javadoc tags
-
 Javadoc is a document generator that looks through your Java source files for specific annotations. It parses out the annotations into the Javadoc output. Knowing the annotations is essential, since this is how the Javadoc gets created.
 
 The following are the most common tags used in Javadoc. Each tag has a word that follows it. For example, `@param latitude` means the parameter is "latitude".
 
-{% include tip.html content="To see a lengthy Javadoc tag, see this [example from Oracle](http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#examples)." %}
+<div markdown="span" class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> To see a lengthy Javadoc tag, see this <a href="http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#examples">example from Oracle</a>.</div>
 
-| Javadoc tag | Description |
-|-------|----------|
-| @author  | A person who made significant contribution to the code. Applied only at the class, package, or overview level. Not included in Javadoc output. It's not recommended to include this tag since authorship changes often. |
-| @param | A parameter that the method or constructor accepts. Write the description like this: `@param count Sets the number of widgets you want included.`  |
-| @deprecated | Lets users know the class or method is no longer used. This tag will be positioned in a prominent way in the Javadoc. Accompany it with a @see or {@link} tag as well. |
-| @return | What the method returns. |
-| @see | Creates a see also list. Use {@link} for the content to be linked. |
-| {@link} | Used to create links to other classes or methods. Example: `{@link Foo#bar}` links to the method `bar` that belongs to the class `Foo`. To link to the method in the same class, just include #bar. |
-| @since 2.0 | The version since the feature was added. |
-| @throws | The kind of exception the method throws. Note that your code must indicate an exception thrown in order for this tag to validate. Otherwise Javadoc will produce an error. @exception is an alternative tag. |
-| @Override  | Used with interfaces and abstract classes. Performs a check to see if the method is an override. |
+The following are some common Javadoc tags:
+
+* **@author**  A person who made significant contribution to the code. Applied only at the class, package, or overview level. Not included in Javadoc output. It's not recommended to include this tag since authorship changes often.
+* **@param** A parameter that the method or constructor accepts. Write the description like this: `@param count Sets the number of widgets you want included.`  
+* **@deprecated** Lets users know the class or method is no longer used. This tag will be positioned in a prominent way in the Javadoc. Accompany it with a @see or {@link} tag as well. |
+* **@return** What the method returns.
+* **@see** Creates a see also list. Use {@link} for the content to be linked.
+* **{@link}** Used to create links to other classes or methods. Example: `{@link Foo#bar}` links to the method `bar` that belongs to the class `Foo`. To link to the method in the same class, just include #bar.
+* **@since 2.0** The version since the feature was added.
+* **@throws** The kind of exception the method throws. Note that your code must indicate an exception thrown in order for this tag to validate. Otherwise Javadoc will produce an error. @exception is an alternative tag.
+* **@Override** Used with interfaces and abstract classes. Performs a check to see if the method is an override.
 
 ## Comments versus Javadoc tags
 

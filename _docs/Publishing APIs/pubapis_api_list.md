@@ -6,8 +6,6 @@ weight: 4.6
 section: publishingapis
 ---
 
-## A survey of API documentation sites
-
 The following are about 100 openly accessible REST APIs that you can browse as a way to look at patterns and examples. Most of these REST API links are available from [programmableweb.com](http://programmableweb.com). I initially started gathering a list of the APIs in Programmableweb's "Most Popular" category, but then I just started adding links as I ran across interesting APIs.
 
 1. [Google Places API](https://developers.google.com/places/webservice/intro)

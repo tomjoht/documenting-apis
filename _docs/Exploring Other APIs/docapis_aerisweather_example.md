@@ -8,9 +8,6 @@ sidebar: docapis
 section: otherapis
 ---
 
-
-## The challenge
-
 Use the Aeris Weather API to get the wind speed (MPH) for a specific place (your choice).
 
 ## The Aeris Weather API

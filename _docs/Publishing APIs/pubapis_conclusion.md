@@ -7,8 +7,6 @@ weight: 8.2
 section: publishingapis
 ---
 
-## Congrats, you finished
-
 Congratulations, you finished the Publishing API Docs course. By now, you should have a solid understanding of the variety and possibilities for publishing API documentation.
 
 At this point, think about your requirements, your audience, and try to pick the right tools for your situation.

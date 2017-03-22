@@ -10,9 +10,6 @@ sidebar: docapis
 section: docendpoints
 ---
 
-
-## The terminology to describe a "resource" varies
-
 When it comes to the right terminology to describe the resource, practices vary. Exactly what are the "things" that you access using a URL? Here are some of the terms used in different API docs:
 
 * API calls
@@ -28,7 +25,8 @@ Some docs get around the situation by not calling them anything explicitly.
 
 You could probably choose the terms that you like best. My favorite is to use *resources* (along with *endpoint* for the URL. An API has various "resources" that you access through "endpoints." The endpoint gives you access to a resource. The endpoint is the URL path (in this example, `/surfreport`). The information the endpoint interacts with, though, is called a resource.
 
-{% include tip.html content="A URI (Uniform Resource Identifier) describes what something is, whereas a URL (Uniform Resource Location) tells you where to locate it. Hence the resource itself is a URI that you access using a URL." %}
+{: .tip}
+A URI (Uniform Resource Identifier) describes what something is, whereas a URL (Uniform Resource Location) tells you where to locate it. Hence the resource itself is a URI that you access using a URL.
 
 ## Some examples
 
@@ -52,7 +50,8 @@ The [EventBrite API](https://www.eventbrite.com/developer/v3/endpoints/events/) 
 
 <a href="https://www.eventbrite.com/developer/v3/endpoints/events/"><img src="images/eventbriteobjects.png" alt="Eventbrite" /></a>
 
-{% include tip.html content="Remember the distinction between resources and endpoints. A resource (or \"object\") can have many different endpoints and methods you can use with it. When you're writing documentation, it probably makes sense to group content by resources and then list the available endpoints for each resource on the resource's page, or as subpages under the resource." %}
+{: .tip}
+Remember the distinction between resources and endpoints. A resource (or \"object\") can have many different endpoints and methods you can use with it. When you're writing documentation, it probably makes sense to group content by resources and then list the available endpoints for each resource on the resource's page, or as subpages under the resource.
 
 This simple example with the Mashape Weather API, however, just has three different endpoints. There's not a huge reason to separate out endpoints by resource.
 
@@ -102,7 +101,8 @@ The [Box API](https://box-content.readme.io/reference#collaboration-object) has 
 
 The Box example has 5 different endpoints or methods you can call. Each of these methods lets you access the Collaboration resource or object in different ways. Why call it an object? When you get the Collaboration resource, the JSON is an object.
 
-{% include tip.html content="Developers often use the term \"call a method\" when talking about using a method. If you consider the endpoints as HTTP methods, then you can call an API method." %}
+{: .tip}
+Developers often use the term \"call a method\" when talking about using a method. If you consider the endpoints as HTTP methods, then you can call an API method.
 
 ## Wait, I'm confused
 
@@ -187,4 +187,5 @@ With the description of surfreport, you might expand on this with much greater d
 
 You could link the description to the places in the user guide where you expand on it in more detail. But since developers often write API documentation, they sometimes never write the user guide (as is the case with the Weather API in Mashape).
 
-{{tip}}The description of the endpoint is likely something you'll re-use in different places: product overviews, tutorials, code samples, quick references, etc. As a result, put a lot of effort into crafting it." %}
+{: .tip}
+The description of the endpoint is likely something you'll re-use in different places: product overviews, tutorials, code samples, quick references, etc. As a result, put a lot of effort into crafting it.

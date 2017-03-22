@@ -10,9 +10,6 @@ sidebar: docapis
 section: docnonref
 ---
 
-
-## Response codes let you know the status of the request
-
 Remember when we submitted the cURL call back in <a href="docapis_make_curl_call.html">an earlier lesson</a>? We submitted a cURL call and specified that we wanted to see the response headers (`--include` or `-i`):
 
 ```bash
@@ -79,7 +76,8 @@ Alternatively, you can have a general status and error codes page that lists all
 
 In particular, you should look for codes that return when there is an error, since this information helps developers troubleshoot problems.
 
-{{tip}}You can run some of the cURL calls you made earlier (this time adding <code>-i</code>) and looking at the HTTP status code in the response." %}
+{: .tip}
+You can run some of the cURL calls you made earlier (this time adding <code>-i</code>) and looking at the HTTP status code in the response.
 
 ## How to list status codes
 

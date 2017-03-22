@@ -7,7 +7,6 @@ weight: 6.4
 section: designpatterns
 ---
 
-## Using a template
 If you have a lot of endpoints, you can construct a template that forces specific values in the same template. This is important because you want to establish a consistency with each endpoint. You're basically filling in the blanks.
 
 You could just remember to add the exact same sections on each page, but this requires more manual consistency.

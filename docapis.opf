@@ -91,13 +91,36 @@ layout: null
 
 <manifest>
 <!-- HTML content files [mandatory] -->
-{% for doc in site.docs %}
-<item id="item_{{doc.permalink | remove: "/" | remove: ".html" }}" media-type="application/xhtml+xml" href="{{doc.url | remove: "/" }}"></item>
+
+{% for folder in site.data.docapis.folders %}
+    <item id="item_{{folder.jurl | remove: "/" | remove: ".html" }}" media-type="application/xhtml+xml" href="{{folder.jurl | remove: "/" }}"></item>
+{% for folderitem in folder.folderitems %}
+  {% if folderitem.title %}
+    <item id="item_{{folderitem.jurl | remove: "/" | remove: ".html" }}" media-type="application/xhtml+xml" href="{{folderitem.jurl | remove: "/" }}"></item>
+    {% endif %}
+      {% for subfolder in folderitem.subfolders %}
+    <item id="item_{{subfolder.jurl | remove: "/" | remove: ".html" }}" media-type="application/xhtml+xml" href="{{subfolder.jurl | remove: "/" }}"></item>
+              {% for subfolderitem in subfolder.subfolderitems %}
+                {% if subfolderitem.title %}
+    <item id="item_{{subfolderitem.jurl | remove: "/" | remove: ".html" }}" media-type="application/xhtml+xml" href="{{subfolderitem.jurl | remove: "/" }}"></item>
+                    {% endif %}
+                      {% for subsubfolder in subfolderitem.subsubfolders %}
+    <item id="item_{{subsubfolder.jurl | remove: "/" }}" media-type="application/xhtml+xml" href="{{subsubfolder.jurl | remove: "/" }}"></item>
+                            {% for subsubfolderitem in subsubfolder.subsubfolderitems %}
+                              {% if subsubfolderitem.title %}
+    <item id="item_{{subsubfolderitem.jurl | remove: "/" | remove: ".html" }}" media-type="application/xhtml+xml" href="{{subsubfolderitem.jurl | remove: "/" }}"></item>
+                              {% endif %}
+                            {% endfor %}
+                      {% endfor %}
+{% endfor %}
+{% endfor %}
+{% endfor %}
 {% endfor %}
 
 <!-- IMAGES -->
-{% for file in site.static_files %}
-{% if file.extname == ".png" or file.extname == ".jpg" or file.extname == ".gif" %}<item id="image{% increment imageCounter %}" media-type="image/{{file.extname | remove: "." }}" href="images{{ file.path | remove: "/images" }}"/>{% endif %}
+{% assign image_files = site.static_files | where: "image", true %}
+{% for myimage in image_files %}
+  <item id="image{% increment imageCounter %}" media-type="image/{{myimage.extname | remove: "." }}" href="images{{ myimage.path | remove: "/images" }}"/>
 {% endfor %}
 
 
@@ -123,11 +146,33 @@ layout: null
 -->
 
 <spine toc="My_Table_of_Contents">
+
   <!-- the spine defines the linear reading order of the book -->
 
-  {% for doc in site.docs %}
-  	<itemref idref="item_{{doc.permalink | remove: "/" | remove: ".html" }}"/>
-  {% endfor %}
+{% for folder in site.data.docapis.folders %}
+  <itemref idref="item_{{folder.jurl | remove: "/" | remove: ".html" }}"/>
+{% for folderitem in folder.folderitems %}
+  {% if folderitem.title %}
+    <itemref idref="item_{{folderitem.jurl | remove: "/" | remove: ".html" }}"/>
+    {% endif %}
+      {% for subfolder in folderitem.subfolders %}
+          <itemref idref="item_{{subfolder.jurl | remove: "/" | remove: ".html" }}"/>
+              {% for subfolderitem in subfolder.subfolderitems %}
+                {% if subfolderitem.title %}
+                  <itemref idref="item_{{subfolderitem.jurl | remove: "/" | remove: ".html" }}"/>
+                    {% endif %}
+                      {% for subsubfolder in subfolderitem.subsubfolders %}
+                          <itemref idref="item_{{subsubfolder.jurl | remove: "/" | remove: ".html" }}"/>
+                            {% for subsubfolderitem in subsubfolder.subsubfolderitems %}
+                              {% if subsubfolderitem.title %}
+                                  <itemref idref="item_{{doc.subsubfolderitem | remove: "/" | remove: ".html" }}"/>
+                              {% endif %}
+                            {% endfor %}
+                      {% endfor %}
+{% endfor %}
+{% endfor %}
+{% endfor %}
+{% endfor %}
 </spine>
 
 <!--

@@ -2,6 +2,21 @@ sidebarTitle: Documenting REST APIs
 
 folders:
 
+# - title: Table of Contents
+#   jurl: /toc.html
+
+- title: Frontmatter
+  jurl: /frontmatter.html
+  folderitems:
+  - title: Copyright
+    base: frontmatter.html
+    jurl: /copyright.html
+    weight: 1.0
+  - title: Foreward
+    base: frontmatter.html
+    jurl: /foreward.html
+    weight: 2.0
+
 - title: Introduction to REST APIs
   jurl: /introtoapis.html
   folderitems:
@@ -15,20 +30,20 @@ folders:
     jurl: /docapis_intro_to_rest_api_doc.html
     weight: 1.1
 
-  - title: Job market overview
-    base: introtoapis.html
-    jurl: /jobapis_overview.html
-    weight: 8.1
-
-  # - title: Learning code -- how much is enough?
-  #   base: introtoapis.html
-  #   jurl: /pubapis_learning_to_code.html
-  #   weight: 8.2
-
   - title: What is a REST API?
     base: introtoapis.html
     jurl: /docapis_what-is-a-rest-api.html
     weight: 1.2
+
+  - title: Job market overview
+    base: introtoapis.html
+    jurl: /jobapis_overview.html
+    weight: 1.21
+
+  - title: Learning code -- how much is enough?
+    base: introtoapis.html
+    jurl: /pubapis_learning_to_code.html
+    weight: 1.22
 
 - title: Using a REST API as a developer
   jurl: /likeadeveloper.html
@@ -123,20 +138,20 @@ folders:
     jurl: /docapis_doc_sample_responses.html
     weight: 2.9
 
-  # - title: Documenting code samples
-  #   base: docendpoints.html
-  #   jurl: /docapis_doc_code_samples.html
-  #   weight: 3.0
+  - title: Documenting code samples
+    base: docendpoints.html
+    jurl: /docapis_doc_code_samples.html
+    weight: 3.0
 
-  # - title: Putting it all together
-  #   base: docendpoints.html
-  #   jurl: /docapis_finished_doc_result.html
-  #   weight: 3.1
+  - title: Putting it all together
+    base: docendpoints.html
+    jurl: /docapis_finished_doc_result.html
+    weight: 3.1
 
-  # - title: "My biggest tip: Test everything"
-  #   base: docendpoints.html
-  #   jurl: /nativelibraryapis_testing.html
-  #   weight: 8.0
+  - title: "My biggest tip: Test everything"
+    base: docendpoints.html
+    jurl: /nativelibraryapis_testing.html
+    weight: 8.0
 
 - title: Documenting non-reference sections
   jurl: /docnonref.html
@@ -206,10 +221,10 @@ folders:
     jurl: /docapis_aerisweather_example.html
     weight: 4.3
 
-  # - title: Next phase of course
-  #   base: otherapis.html
-  #   jurl: /docapis_completion.html
-  #   weight: 4.4
+  - title: Next phase of course
+    base: otherapis.html
+    jurl: /docapis_completion.html
+    weight: 4.4
 
 - title: Publishing API docs
   jurl: /publishingapis.html
@@ -230,9 +245,10 @@ folders:
     jurl: /pubapis_api_doc_types.html
     weight: 4.7
 
-  # - title: Tool decisions
-  #   jurl: /pubapis_tooldecisions.html
-  #   weight: 4.8
+  - title: Tool decisions
+    base: publishingapis.html
+    jurl: /pubapis_tooldecisions.html
+    weight: 4.8
 
   - title: Github wikis
     base: publishingapis.html
@@ -259,10 +275,10 @@ folders:
     jurl: /pubapis_rest_specification_formats.html
     weight: 5.3
 
-  # - title: Implementing Swagger with your API docs
-  #   base: publishingapis.html
-  #   jurl: /pubapis_swagger_intro.html
-  #   weight: 5.4
+  - title: Implementing Swagger with your API docs
+    base: publishingapis.html
+    jurl: /pubapis_swagger_intro.html
+    weight: 5.4
 
   - title: Swagger tutorial
     base: publishingapis.html
@@ -342,6 +358,12 @@ folders:
       base: designpatterns.html
       jurl: /pubapis_api_interactivity.html
       weight: 6.8
+
+    - title: Adding an Edit on Github button
+      base: designpatterns.html
+      jurl: /pubapis_edit_on_github.html
+      weight: 6.81
+
 
     - title: Challenging factors
       base: designpatterns.html

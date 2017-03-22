@@ -10,9 +10,6 @@ sidebar: docapis
 section: docendpoints
 ---
 
-
-## Parameters are ways to configure the endpoint
-
 Parameters refer to the various ways the endpoint can be configured to influence the response. Many times parameters are out in a simple table like this:
 
 | Parameter | Required? | Data Type | Example |
@@ -79,7 +76,8 @@ The `{PhoneNumber}` value is described in the description of the endpoint rather
 
 Other important details about parameters are the maximum of minimum values allowed for the parameter, and whether the parameter is optional or required.
 
-{% include tip.html content="When you test an API, try running an endpoint without the required parameters, or with the wrong parameters. See what kind of error response comes back. Include that response in your response codes section." %}
+{: .tip}
+When you test an API, try running an endpoint without the required parameters, or with the wrong parameters. See what kind of error response comes back. Include that response in your response codes section.
 
 ## Color coding parameter values
 

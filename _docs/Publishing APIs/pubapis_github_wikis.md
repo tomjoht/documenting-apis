@@ -7,9 +7,6 @@ weight: 4.9
 section: publishingapis
 ---
 
-
-## Github wikis as complementary repositories to code projects
-
 When you create a repository on Github, the repository comes with a wiki that you can add pages to. This wiki can be really convenient if your source code is stored on Github.
 
 Here's an example of the Basecamp API, which is housed on Github.
@@ -45,7 +42,8 @@ There are some limitations with Github wikis:
 
 In this section, you will create a new Github repo and publish a sample file there.
 
-{% include note.html content="In this section, you'll be using Git commands through your terminal or command prompt. In later tutorials, you'll use the Github Desktop and Github browser tools. Basically, you can interact with Github in a variety of ways." %}
+{: .note}
+In this section, you'll be using Git commands through your terminal or command prompt. In later tutorials, you'll use the Github Desktop and Github browser tools. Basically, you can interact with Github in a variety of ways.
 
 1. Go to [Github.com](http://github.com) and either sign in or create an account.
 2. After you're signed in, click the **+** button in the upper-right corner and select **New repository**.
@@ -75,7 +73,8 @@ You could use this Github wiki in an entirely browser-based way for multiple peo
 
 	The "Clone this wiki locally" link allows you to easily insert the URL into a `git clone {url}` command in your terminal.
 
-	{% include note.html content="Note that the wiki is a separate clone URL than the project's repository. Make sure you're viewing your wiki and not your project." %}
+	{: .note}
+Note that the wiki is a separate clone URL than the project's repository. Make sure you're viewing your wiki and not your project.
 
 	In contrast to "Clone this wiki locally," the "Clone in Desktop" option launches the Github Desktop client and allows you to manage the repository and your modified files, commits, pushes, and pull through the Github Desktop client.
 
@@ -87,7 +86,8 @@ You could use this Github wiki in an entirely browser-based way for multiple peo
 	git clone https://github.com/tomjohnson1492/weatherapi.wiki.git
    ```
 
-	{% include note.html content="To paste content into the Git Shell on Windows, right-click and select <b>Paste</b>." %}
+	{: .note}
+To paste content into the Git Shell on Windows, right-click and select <b>Paste</b>.
 
 5. Navigate to the directory (either using standard ways of browsing for files on your computer or via the terminal) to see the files you downloaded. If you can view invisible files on your machine, you will also see a git folder.
 
@@ -95,7 +95,8 @@ You could use this Github wiki in an entirely browser-based way for multiple peo
 
 1. Set up Git on your computer.
 
-	{{tip}}It's easiest to install Git by <a href="https://desktop.github.com">installing Github Desktop</a>. Installing Github Desktop will include all the Git software as well." %}
+	{: .tip}
+It's easiest to install Git by <a href="https://desktop.github.com">installing Github Desktop</a>. Installing Github Desktop will include all the Git software as well.
 
 	If you're installing the Windows version of Github Desktop, after you install Github, you'll get a special Github Shell shortcut that you can use to work on the command line. You should use that special Github Shell rather than the usual command line prompt.
 
@@ -127,7 +128,7 @@ After you make these configurations, close and re-open your terminal.
 
 	Git doesn't track all files in the same folder where the invisible Git folder has been initialized. Git tracks modifications only for the files that have been "added" to Git. By selecting `--all`, you're adding all the files in the folder to Git. You could also type a specific file name here instead of `--all`.
 
-	{{warning}} Just use Git to track text files. Don't start tracking large binary files, especially audio or video files. Version control systems really can't handle that kind of format well." %}
+	{{warning}} Just use Git to track text files. Don't start tracking large binary files, especially audio or video files. Version control systems really can't handle that kind of format well.
 
 4. See the changes set in your staging area:
 

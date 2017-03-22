@@ -7,8 +7,6 @@ weight: 6.1
 section: publishingapis
 ---
 
-## Beautiful API doc sites require front-end design skills
-
 If you want to build a beautiful API doc website that rivals sites such as [Parse.com](http://parse.com) and others, you'll most likely need to involve a UX engineer to build it. Fortunately, this is a solution that many UX engineers and other web developers are usually excited to tackle.
 
 <img src="images/uxteam.png" alt="Getting help from your UX team" />

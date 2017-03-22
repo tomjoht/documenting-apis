@@ -10,9 +10,6 @@ sidebar: docapis
 section: likeadeveloper
 ---
 
-
-## About cURL
-
 While Postman is convenient, it's hard to represent &mdash; in your documentation &mdash; just how to make the calls. Additionally, different users probably use different GUI clients, or none at all (preferring the command line instead).
 
 Instead of describing how to make REST calls using a GUI client like Postman, the most conventional method for documenting request syntax is to explain how to make the calls using cURL.
@@ -45,13 +42,15 @@ In this section, you'll use cURL to make the same requests you made previously w
 
 4.  Swap in your own API key in place of `APIKEY`.
 
-    {% include note.html content="In the instruction in this course, <code>APIKEY</code> will always be used instead of an actual API key. You should replace that part with your own API key." %}
+    {: .note}
+In the instruction in this course, <code>APIKEY</code> will always be used instead of an actual API key. You should replace that part with your own API key.
 
 ## Make the request in cURL (Mac)
 
 1.  Open a terminal. To open Terminal, press **Cmd + space bar** and type **Terminal**.
 
-	  {% include tip.html content="Instead of using Terminal, download and use [iTerm](ttps://www.iterm2.com/) instead. It will give you the ability to open multiple tabs, save profiles, and more." %}
+	  {: .tip}
+Instead of using Terminal, download and use [iTerm](https://www.iterm2.com/) instead. It will give you the ability to open multiple tabs, save profiles, and more.
 
 2.  Paste the request you have in your text editor into the command line.
 

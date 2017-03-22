@@ -10,9 +10,6 @@ sidebar: docapis
 section: docendpoints
 ---
 
-
-## Provide a sample response for the endpoint
-
 It's important to provide a sample response from the endpoint. This lets developers know if the endpoint contains the information they want, and how that information is labeled.
 
 Here's an example from Flattr's API. In this case, the response actually includes the response header as well as the response body:
@@ -39,7 +36,8 @@ Many times the response contains nested objects (objects within objects). Here D
 
 <a href="https://www.dropbox.com/developers/core/docs#disable-token"><img src="images/returnvaluedefinitions.png" alt="Dropbox nested example" /></a>
 
-{% include tip.html content="Notice how the response values are in a monospaced font while the descriptions are in a regular font? This helps improve the readability." %}
+{: .tip}
+Notice how the response values are in a monospaced font while the descriptions are in a regular font? This helps improve the readability.
 
 Other APIs will nest the response definitions to imitate the JSON structure. Here's an example from bit.ly's API:
 
@@ -63,7 +61,8 @@ For example, `MinimumAdvertisedPrice` is nested inside `DiscountPriceInfo`, whic
 
 It's also interesting how much detail eBay includes for each item. Whereas the Twitter writers appear to omit descriptions, the eBay authors write small novels describing each item in the response.
 
-{% include note.html content="A lot of APIs also return responses in XML, especially if the API is an older API. (Initially, XML was more popular than JSON, but now it's the reverse.) Some APIs give you the option of returning responses in either XML or JSON. If you're going to consume the API on a web page, JSON is probably much more popular because you can use JavaScript dot notation to grab the information you want." %}
+{: .note}
+A lot of APIs also return responses in XML, especially if the API is an older API. (Initially, XML was more popular than JSON, but now it's the reverse.) Some APIs give you the option of returning responses in either XML or JSON. If you're going to consume the API on a web page, JSON is probably much more popular because you can use JavaScript dot notation to grab the information you want.
 
 ## Where to include the response
 

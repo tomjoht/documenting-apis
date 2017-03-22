@@ -10,12 +10,10 @@ sidebar: docapis
 section: likeadeveloper
 ---
 
-
-## Accessing JSON values through dot notation
-
 You'll notice that in the main content display of the weatherdata code, the REST response information didn't appear. It only appeared in the JavaScript Console. You need to use dot notation to access the JSON values you want.
 
-{% include note.html content="This section will use a tiny bit of JavaScript. You probably wouldn't use this code very much for documentation, but it's important to know anyway." %}
+{: .note}
+This section will use a tiny bit of JavaScript. You probably wouldn't use this code very much for documentation, but it's important to know anyway.
 
 Let's say you wanted to pull out the `description` part of the JSON response. Here's the dot notation you would use:
 

@@ -7,8 +7,6 @@ weight: 7.6
 section: nativelibraryapis
 ---
 
-## Common scenarios
-
 It's pretty common for developers to add Javadoc tags and brief comments as they're creating Java code. In fact, if they don't add it, the IDE will usually produce a warning error.
 
 However, the comments that developers add are usually poor, incomplete, or incomprehensible. A tech writer's job with Javadoc is often to edit the content that's already there, providing more clarity, structure, inserting the right tags, and more.

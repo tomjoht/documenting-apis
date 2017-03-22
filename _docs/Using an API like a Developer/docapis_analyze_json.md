@@ -10,9 +10,6 @@ sidebar: docapis
 section: likeadeveloper
 ---
 
-
-## Prettify the weatherdata JSON response
-
 Let's look at the JSON response for the Mashape weatherdata endpoint in more depth. The minified response from cURL looks like this:
 
 ```json
@@ -215,7 +212,8 @@ And objects can contain arrays in the value part of the key-value pair:
 
 Just remember, objects are set off with curly braces `{ }` and contain key-value pairs. Sometimes those values are arrays. Arrays are lists and are set off with square brackets `[ ]`.
 
-{% include tip.html content="It's important to understand the difference between objects and arrays because it determines how you access and display the information. More on that later." %}
+{: .tip}
+It's important to understand the difference between objects and arrays because it determines how you access and display the information. More on that later.
 
 ## Identify the objects and arrays in the weatherdata API response
 
